@@ -34,7 +34,8 @@ export default class WelcomeScreen extends React.Component{
             last_Name:this.state.lastName,
             contact:this.state.contact,
             address:this.state.address,
-            email_id:this.state.userName
+            email_id:this.state.userName,
+            isBookRequestActive:false
         })
     return alert("user added successfully"," ", [{text:'ok', onPress:()=>{this.setState({
         isModalVisible:false

@@ -32,21 +32,21 @@ export default class SwipableFlatList extends React.Component{
     componentDidMount(){
         this.getNotifications()
     }
-    renderItem=(data)=>{
+    renderItem=(data)=>(
         <Animated.View>
             <ListItem leftElement={<Icon name="book" type="font-awesome" color="black"> </Icon>} 
             title={data.item.book_name} titleStyle={{color:"black",fontWeight:'bold'}} subtitle={data.item.message} bottomDivider>
 
             </ListItem>
         </Animated.View>
-    }
-    renderHiddenItem=()=>{
+    )
+    renderHiddenItem=()=>(
         <View style={styles.rowBack}>
             <View style={[styles.backRightBtn,styles.backRightBtnRight]}>
                 <Text style={styles.backTextWhite}>Mark as Read</Text>
             </View>
         </View>
-    }
+    )
     onSwipeValueChange=(swipeData)=>{
         var all_notifications = this.state.allNotifications
         const {key,value} = swipeData

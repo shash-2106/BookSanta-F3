@@ -34,7 +34,7 @@ bellIconWithBadge=()=>{
     render(){
         return(
 
-            <Header rightComponent={<this.bellIconWithBadge{...this.props}/>} leftComponent={<Icon name="bar" type="font-awesome" color='black' onPress={()=>{this.props.navigation.toggleDrawer()}}></Icon>} centerComponent={{text:this.props.title, style:{color:"white", fontSize:20, fontWeight:'bold'}}} backgroundColor='#4d0000'/>
+            <Header rightComponent={<this.bellIconWithBadge{...this.props}/>} leftComponent={<Icon name="bars" type="font-awesome" color='black' onPress={()=>{this.props.navigation.toggleDrawer()}}></Icon>} centerComponent={{text:this.props.title, style:{color:"white", fontSize:20, fontWeight:'bold'}}} backgroundColor='#4d0000'/>
         )  
     }
 
